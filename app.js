@@ -10,7 +10,8 @@ var app = express();
 require('./db')
 
 const whitelist = [
-    '*'
+    '*',
+    'http://localhost:4200/'
   ];
 
 app.use((req, res, next) => {
